@@ -210,7 +210,7 @@
 			
 			<c:forEach items="${modules} " var="module">
 										<tr>
-blabajhauhfhzfu
+blabajhauhfhzfu nassim blabla
 								
 											<td>**</td>
 									 
