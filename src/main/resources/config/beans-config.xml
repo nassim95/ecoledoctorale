@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	   <bean id="articleDao" class="com.ecoledoctorale.mvc.dao.impl.ArticleDaoImpl" />
+	   <bean id="articleService" class="com.ecoledoctorale.mvc.services.impl.ArticleServicesImpl">
+             <property name="dao" ref ="articleDao"></property>
+	   </bean>
+	   
+	   
+	    <bean id="administrateurDao" class="com.ecoledoctorale.mvc.dao.impl.AdministrateurDaoImpl" />
+	   <bean id="administrateurService" class="com.ecoledoctorale.mvc.services.impl.AdministrateurServicesImpl">
+             <property name="dao" ref ="administrateurDao"></property>
+	   </bean>
+	   
+	    <bean id="CandidatDao" class="com.ecoledoctorale.mvc.dao.impl.CandidatDaoImpl" />
+	   <bean id="CandidatService" class="com.ecoledoctorale.mvc.services.impl.CandidatServicesImpl">
+             <property name="dao" ref ="CandidatDao"></property>
+	   </bean>
+	    <bean id="DirecteurDao" class="com.ecoledoctorale.mvc.dao.impl.DirecteurDaoImpl" />
+	   <bean id="directeurService" class="com.ecoledoctorale.mvc.services.impl.DirecteurServicesImpl">
+             <property name="dao" ref ="DirecteurDao"></property>
+	   </bean>
+	    <bean id="moduleDao" class="com.ecoledoctorale.mvc.dao.impl.ModuleDaoImpl" />
+	   <bean id="moduleService" class="com.ecoledoctorale.mvc.services.impl.ModuleServicesImpl">
+             <property name="dao" ref ="moduleDao"></property>
+	   </bean>
+	    <bean id="ProfesseurDao" class="com.ecoledoctorale.mvc.dao.impl.ProfesseurDaoImpl" />
+	   <bean id="professeurService" class="com.ecoledoctorale.mvc.services.impl.ProfesseurServicesImpl">
+             <property name="dao" ref ="ProfesseurDao"></property>
+	   </bean>
+	   
+
+	
+		
+
+</beans>
