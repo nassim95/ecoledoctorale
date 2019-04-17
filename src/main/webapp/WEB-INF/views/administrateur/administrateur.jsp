@@ -19,7 +19,8 @@
 
   <!-- Custom styles for this template-->
   <link href="<%request.getContextPath();%>resources/css/sb-admin-2.css" rel="stylesheet">
-
+<link href="<%request.getContextPath();%>resources/css/initial.css"
+	rel="stylesheet">
 </head>
 
 <body id="page-top"> 
@@ -30,12 +31,12 @@
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-       <img id="a"
+       <!--  img id="a"
     src="http://www.ensi.rnu.tn/images/banniere/ban_interne12.jpg" 
     alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
     height="100px" 
     width="950px" 
-/>
+/>-->
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<%request.getContextPath();%>index.html">
         <div class="sidebar-brand-icon rotate-n-15">
@@ -83,6 +84,7 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
+      
        <c:url value ="/ajouter evenement/" var="ajouter evenement" />
         <a class="nav-link collapsed" href="ajouterevenement" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
@@ -104,8 +106,17 @@
           <i class="fas fa-fw fa-wrench"></i>
           <span> Ajouter Liste Etudiant</span>
         </a>
+        <li class="nav-item active">
+      <c:url value ="/blank/" var="blank" />
+        <a class="nav-link" href="initial" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span> Page d'accueil </span>
+        </a>
+     
+      </li>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
+         
             <h6 class="collapse-header">Custom Utilities:</h6>
             <a class="collapse-item" href="<%request.getContextPath();%>utilities-color.html">Colors</a>
             <a class="collapse-item" href="<%request.getContextPath();%>utilities-border.html">Borders</a>
@@ -123,9 +134,12 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item active">
         <a class="nav-link" href="<%request.getContextPath();%>"#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
+          
           <span></span>
         </a>
+     
+      </li>
+    
      
       </li>
 
@@ -153,6 +167,11 @@
       <div id="content">
 
         <!-- Topbar -->
+          <img id="a"
+    src="http://www.ensi.rnu.tn/images/banniere/ban01.jpg"" 
+    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
+    height="250px" 
+    width="1170px" />
         
       
 
@@ -166,10 +185,12 @@
           <br>
           <br>
           <br>
-          <h1 style="color:blue;">PAGE ADMINISTRATIVE </h1>
-          _____________________________________________________________________________________
-          _____________________________________________________________________________________
-          
+          <div class="card mb-4 py-3 border-bottom-danger">
+                <div class="card-body">
+                   <h2 style="color:red;"><strong>PAGE ADMINISTRATIVE</strong> </h2>
+                </div>
+              </div>
+         
        <br>
           <br>
           <br>
@@ -177,8 +198,7 @@
            <br>
           
           <br>
-          <p style="color:red;">The time : ${serverTime}</p>
-
+         
         </div>
         <!-- /.container-fluid -->
  

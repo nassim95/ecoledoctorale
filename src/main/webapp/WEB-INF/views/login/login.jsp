@@ -44,16 +44,21 @@
 							<div class="col-lg-6">
 								<div class="p-5">
 									<div class="text-center">
-										<h1 class="h4 text-gray-900 mb-4">BIENVENUE</h1>
+										  <div class="card mb-4 py-3 border-left-info">
+                  <div class="card-body">
+          <h1 style="color:blue;">  <strong>  LOGIN</strong>       </h1>
+          </div>
+          </div>
+      
 									</div>
-									<form class="user">
+									<form class="user" >
 										<div class="form-group">
-											<input type="email" class="form-control form-control-user"
+											<input type="email" name="email"class="form-control form-control-user"
 												id="exampleInputEmail" aria-describedby="emailHelp"
 												placeholder="Enter Email Address...">
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control form-control-user"
+											<input type="password" name="password" class="form-control form-control-user"
 												id="exampleInputPassword" placeholder="Password">
 										</div>
 										<div class="form-group">
@@ -100,7 +105,9 @@
 
 	</div>
 
-	<!-- Bootstrap core JavaScript-->
+
+	
+	
 	<script
 		src="<%request.getContextPath();%>resources/vendor/jquery/jquery.min.js"></script>
 	<script

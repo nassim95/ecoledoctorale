@@ -141,10 +141,10 @@
 
 			<!-- Nav Item - Pages Collapse Menu -->
 			<li class="nav-item active"><a class="nav-link"
-				href="<%request.getContextPath();%>" #" data-toggle="collapse"
+				href="initial"<%request.getContextPath();%>" #" data-toggle="collapse"
 				data-target="#collapsePages" aria-expanded="true"
 				aria-controls="collapsePages"> <i class="fas fa-fw fa-folder"></i>
-					<span></span>
+					<span>Page d'acceuil</span>
 			</a></li>
 
 			<!-- Nav Item - Charts -->
@@ -192,7 +192,7 @@
 				
 
 					<br> <br> <br> <br> <br> <br>
-					<p style="color: red;">The time : ${serverTime}</p>
+					
 
 				</div>
 				<!-- /.container-fluid -->

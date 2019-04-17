@@ -4224,3 +4224,48 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+/* nassim */
+
+.valider-actif{
+	    background-color: #009200;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.valider-inactif{
+	    background-color: #a9b7a9;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+.invalider-actif{
+	    background-color: #e80000;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.invalider-inactif{
+	    background-color: #b38686;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+	
+}
+
+

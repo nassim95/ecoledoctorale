@@ -10,6 +10,34 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+ .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+ 
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -160,7 +188,7 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #1cc88a;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2556,7 +2584,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #858796;
+  color: #1cc88a;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -10501,9 +10529,9 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
+  background-color: #36b9cc;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-image: linear-gradient(180deg, #36b9cc 10%, #224abe 100%);
   background-size: cover;
 }
 
@@ -11412,20 +11440,20 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png");
+  background: url("https://blog.syloe.com/wp-content/uploads/2017/02/certificat-authentification.png");
   background-position: center;
   background-size: cover;
-   width: 50px;
-height: 450px;
+   width: 4px;
+   height: 420px;
   
 }
 
 .bg-register-image {
-  background: url("http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png");
+  background: url("https://www.ecoles.com.tn/sites/default/files/universite/logo/xensi-logo.jpg.pagespeed.ic.7_Etzl5g2z.jpg");
   background-position: center;
   background-size: cover;
   width: 300px;
-height: 550px;
+height: 500px;
 }
 
 .bg-password-image {
@@ -11833,4 +11861,49 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+
+/* nassim */
+
+.valider-actif{
+	    background-color: #009200;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.valider-inactif{
+	    background-color: #a9b7a9;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+.invalider-actif{
+	    background-color: #e80000;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.invalider-inactif{
+	    background-color: #b38686;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+	
 }

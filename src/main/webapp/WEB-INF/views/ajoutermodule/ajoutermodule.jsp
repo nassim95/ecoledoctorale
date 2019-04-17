@@ -34,50 +34,57 @@
           <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
           <div class="col-lg-7">
             <div class="p-5">
-              <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">--Ajouter module--</h1>
+             <div class="card mb-4 py-3 border-left-info">
+                <div class="card-body">
+                 <h2 style="color:blue;"> <strong> Ajouter Module</strong> </h2>
+                </div>
               </div>
-              <form class="user">
-                              -idmodule
-                 <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="number" class="form-control form-control-user" id="exampleFirstName" placeholder="idmodule">
-                  </div>
-                               -coursdoctoraux 
+            	<c:url value="nouveaumodule" var="urlajouter1" />
+							<f:form modelAttribute="module" action="${urlajouter1}"
+								method="post" class="user">
+               <f:hidden path="idmodule" />
+                              nom module :
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder=" -coursdoctoraux ">
-                  </div>
-                               -credit 
+									<f:input path="nommodule" type="text"
+										class="form-control form-control-user" id="exampleFirstName"
+										placeholder="nom module" />
+								</div>
+                            listedescandidats 
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="-credit ">
-                  </div>
-                              -listedescandidats
+									<f:input path="listedescandidats" type="text"
+										class="form-control form-control-user" id="exampleFirstName"
+										placeholder=" listedescandidats:" />
+								</div>
+                               
+                                  credit 
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder=" -listedescandidats">
-                  </div>
-                              
-                             -nommodule
+									<f:input path="credit" type="text"
+										class="form-control form-control-user" id="exampleFirstName"
+										placeholder="  email :" />
+								</div>
+                            coursdoctoraux:
                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="-nommodule">
-                  </div>
-                             
-                              - seminaires 
+									<f:input path="coursdoctoraux" type="text"
+										class="form-control form-control-user" id="exampleFirstName"
+										placeholder="coursdoctoraux:" />
+								</div>
+                            seminaires 
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="- seminaires ">
-                  </div>
-                         prenom_cand :
-                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="prenom_cand :">
-                  </div>
-                   
-                        nombrecredit :
-                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="number" class="form-control form-control-user" id="exampleFirstName" placeholder="  nombrecredit :">
-                  </div>
-              <br>
-                <a href="<%request.getContextPath();%>administrateur" class="btn btn-primary btn-user btn-block">
-                  Register
-                </a>
-                <hr>
+									<f:input path="seminaires" type="text"
+										class="form-control form-control-user" id="exampleFirstName"
+										placeholder="nom_cand  :" />
+								</div>
+								<div class="panel-footer">
+										<button type="submit" class="btn btn-success btn-circle"><i class="fas fa-check"></i> </button>
+									   <strong>ENRIGISTRER</strong>		
+							</f:form>
+<br>
+<br>
+							<a href="administrateur" class="btn btn-danger btn-icon-split">
+								<span class="icon text-white-50"> <i class="fas fa-trash"></i>
+							</span> <span class="text">ANNULER</span>
+							</a>
+							<hr>
                
               </div>
             </div>

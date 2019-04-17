@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ecoledoctorale.mvc.dao.IModuleDao;
+import com.ecoledoctorale.mvc.entites.Article;
 import com.ecoledoctorale.mvc.entites.Module;
 import com.ecoledoctorale.mvc.services.IModuleServices;
 import com.ecoledoctorale.mvc.services.impl.ModuleServicesImpl;
@@ -31,9 +32,9 @@ public class consultercredit {
 		try {
 			for (Module test : modules){
 			     System.out.println("test");
-			   // String debug = test.getCredit();
+			   List<Article> debug = test.getArticles();
 			    // pour debuger dans la console 
-			     System.out.println(test);
+			     System.out.println(debug);
 			    }
 		}
 		catch (Exception e) {

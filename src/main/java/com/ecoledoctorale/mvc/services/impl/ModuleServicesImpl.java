@@ -45,7 +45,7 @@ public class ModuleServicesImpl implements IModuleServices {
 	@Override
 	public Module getById(Long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getById(id);
 	}
 
 	@Override

@@ -30,12 +30,7 @@
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-       <img id="a"
-    src="http://www.ensi.rnu.tn/images/banniere/ban_interne12.jpg" 
-    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
-    height="100px" 
-    width="950px" 
-/>
+
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<%request.getContextPath();%>index.html">
         <div class="sidebar-brand-icon rotate-n-15">
@@ -61,8 +56,15 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item active">
-        <a class="nav-link" href="<%request.getContextPath();%>"#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+      <c:url value ="/blank/" var="blank" />
+        <a class="nav-link" href="initial" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
+          <span> Page d'accueil </span>
+        </a>
+     
+      </li>
+        <a class="nav-link" href="<%request.getContextPath();%>"#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <li class="nav-item active">
           <span></span>
         </a>
      
@@ -92,7 +94,12 @@
       <div id="content">
 
         <!-- Topbar -->
-        
+               <img id="a"
+    src="http://www.ensi.rnu.tn/images/banniere/ban01.jpg"" 
+    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
+    height="250px" 
+    width="1150px" 
+/>
       
 
         <!-- Begin Page Content -->
@@ -105,18 +112,19 @@
           <br>
           <br>
           <br>
-          <h1 style="color:blue;">        BIENVENUE   </h1>
-          _____________________________________________________________________________________
-          _____________________________________________________________________________________
-          
-       <br>
+         
+       <div class="card mb-4 py-3 border-bottom-primary">
+                <div class="card-body">
+            <h2 style="color:#36b9cc"> <strong> Espace du Candidat</strong> </h2>
+                </div>
+              </div>
           <br>
           <br>
           <br> 
            <br>
           
           <br>
-          <p style="color:red;">The time : ${serverTime}</p>
+         
 
         </div>
         <!-- /.container-fluid -->

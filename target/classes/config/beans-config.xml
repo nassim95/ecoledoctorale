@@ -30,7 +30,10 @@
 	   <bean id="professeurService" class="com.ecoledoctorale.mvc.services.impl.ProfesseurServicesImpl">
              <property name="dao" ref ="ProfesseurDao"></property>
 	   </bean>
-	   
+	   <bean id="evenementDao" class="com.ecoledoctorale.mvc.dao.impl.EvenementDaoImpl">  </bean>
+      <bean id="evenementservice" class="com.ecoledoctorale.mvc.services.impl.EvenementServicesImpl" >
+          <property name="dao" ref="evenementDao" > </property>
+       </bean>
 
 	
 		

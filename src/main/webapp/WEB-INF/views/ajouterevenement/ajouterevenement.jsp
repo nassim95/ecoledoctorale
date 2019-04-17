@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin  - Blank</title>
+  <title>EVENEMENT</title>
   
 
   <!-- Custom fonts for this template-->
@@ -30,12 +30,12 @@
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-       <img id="a"
+<!--        <img id="a"
     src="http://www.ensi.rnu.tn/images/banniere/ban_interne12.jpg" 
-    alt="[ABC Tech posss�de 75% de part de march� et XYZ 25%]"
+    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
     height="100px" 
     width="950px" 
-/>
+/> -->
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<%request.getContextPath();%>index.html">
         <div class="sidebar-brand-icon rotate-n-15">
@@ -122,9 +122,9 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item active">
-        <a class="nav-link" href="<%request.getContextPath();%>"#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link" href="initial"<%request.getContextPath();%>"#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
-          <span></span>
+          <span>Page d'accceuil</span>
         </a>
      
       </li>
@@ -153,6 +153,12 @@
       <div id="content">
 
         <!-- Topbar -->
+         <img id="a"
+    src="http://www.ensi.rnu.tn/images/banniere/ban_interne12.jpg" 
+    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
+    height="150px" 
+    width="1150px" 
+         />
         
       
 
@@ -163,39 +169,48 @@
 
           <!-- Page Heading -->
           <br>
-          <br>
-          <br>
-          <br>
-          <h1 style="color:blue;">PAGE ADMINISTRATIVE </h1>
-          _____________________________________________________________________________________
-          _____________________________________________________________________________________
+        
+        
            <br>
           <br>
-          -------------------------------------------------------------------------------------
            <br>
           <br>
-            <h2 style="color:red;">AJOUTER EVENEMENT </h2>
-          --------------------------------------------------------------------------------------
+          <div class="card mb-4 py-3 border-left-info">
+           <div class="card-body">
+                 <h2 style="color:blue;"> <strong> Ajouter Evenement</strong> </h2>
+                </div>
+          </div>
        <br>
           <br>
-           <form class="user">
-                                 <h4 style="color:blue;"> DATE EVENEMENT:</h4>
-                 <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" >
-                  </div>
+           <c:url value="nouveauEvenement" var="urlajouter2" />
+           
+           <f:form modelAttribute="evenement" action="${urlajouter2}"
+				method="post" class="user">
+								
                               <h4 style="color:blue;"> NOM EVENEMENT:</h4>
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName">
+                    <f:input path="nomevenement" type="text"
+                     class="form-control form-control-user" id="exampleFirstName" />
+                  </div>           
+                                 <h4 style="color:blue;"> DATE EVENEMENT:</h4>
+                 <div class="col-sm-6 mb-3 mb-sm-0">
+                    <f:input path="dateevenement" type="text"
+                     class="form-control form-control-user" id="exampleFirstName" />
                   </div>
                              <h4 style="color:blue;"> LIEUX EVENEMENT: </h4>
                    <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" >
+                    <f:input path="Lieuevenemnt" type="text" 
+                    class="form-control form-control-user" id="exampleFirstName" />
                   </div>
                   <br>
-                    <a href="<%request.getContextPath();%>administrateur" class="btn btn-primary btn-user btn-block">
-                  Register
-                </a>
-                  </form>
+                    <div class="panel-footer">
+											<button type="submit" class="btn btn-success btn-circle"><i class="fas fa-check"></i> </button>
+									   <strong>ENRIGISTRER</strong>	
+                  </f:form>
+                  <a href="administrateur" class="btn btn-danger btn-icon-split">
+								<span class="icon text-white-50"> <i class="fas fa-trash"></i>
+							</span> <span class="text">ANNULER</span>
+							</a>
           <br>
           <br> 
            <br>
@@ -237,7 +252,7 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true">Ã�</span>
           </button>
         </div>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>

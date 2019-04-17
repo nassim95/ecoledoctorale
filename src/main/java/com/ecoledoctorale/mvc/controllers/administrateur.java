@@ -9,6 +9,7 @@ public class administrateur {
 
 	public String administrateur() {
 		
+		
 		return "administrateur/administrateur" ;
 	}
 

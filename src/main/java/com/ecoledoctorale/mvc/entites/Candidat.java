@@ -15,7 +15,7 @@ public class Candidat implements Serializable {
 	
 	@Id
 	@GeneratedValue
-	
+
 	private Long idcandidat;
 	private String nom_cand;
 	private String prenom_cand;
@@ -35,7 +35,7 @@ public class Candidat implements Serializable {
 
 	public Long getIdcandidat() {
 		return idcandidat;
-	}
+	} 
 
 	public void setIdcandidat(Long idcandidat) {
 		this.idcandidat = idcandidat;
