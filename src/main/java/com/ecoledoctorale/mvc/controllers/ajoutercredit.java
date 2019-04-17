@@ -12,7 +12,7 @@ import com.ecoledoctorale.mvc.services.IModuleServices;
 
 @Controller
 public class ajoutercredit {
-	@Autowired
+//	@Autowired
 	private IModuleServices creditservices ;
 	
 	

@@ -18,7 +18,7 @@ import javassist.expr.NewArray;
 
 @Controller
 public class consultercredit {
-	@Autowired 
+	//@Autowired 
 	private IModuleServices moduleservices ;
 	@RequestMapping(value= "/consultercredit")  
 	

@@ -18,7 +18,7 @@ import com.ecoledoctorale.mvc.services.IModuleServices;
 
 @Controller
 public class validercredit {
-	@Autowired
+//	@Autowired
 	private IModuleServices moduleservices;
 
 	@RequestMapping(value = "/validercredit")

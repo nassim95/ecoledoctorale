@@ -12,7 +12,7 @@ import com.ecoledoctorale.mvc.services.ICandidatServices;
 
 @Controller
 public class ajouteretudiant {
-	@Autowired
+//	@Autowired
 	private ICandidatServices Candidatservices ;
 	
 	

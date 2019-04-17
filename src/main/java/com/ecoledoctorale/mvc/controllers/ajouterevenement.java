@@ -11,7 +11,7 @@ import com.ecoledoctorale.mvc.services.IEvenementServices;
 
 @Controller
 public class ajouterevenement {
-	@Autowired
+//	@Autowired
 	private IEvenementServices Evenementservices ;
 	
 	

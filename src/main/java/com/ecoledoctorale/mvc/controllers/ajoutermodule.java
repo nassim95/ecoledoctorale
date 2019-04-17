@@ -13,7 +13,7 @@ import com.ecoledoctorale.mvc.services.IModuleServices;
 
 @Controller
 public class ajoutermodule {
-	@Autowired
+	//@Autowired
 	private IModuleServices Moduleservices ;
 	
 
