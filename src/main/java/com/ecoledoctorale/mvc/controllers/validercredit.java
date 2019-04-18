@@ -25,10 +25,17 @@ public class validercredit {
 
 	public String validercredit(Model model) {
 
-		List<Module> modules = moduleservices.selectAll();
-		/*
-		 * if (modules==null) { modules =new ArrayList<Module>() ; }
-		 */
+		List<Module> modules;
+		if (null == moduleservices.selectAll()) { 
+			
+			modules =new ArrayList<Module>() ;
+					
+			
+		}
+		else { modules= moduleservices.selectAll();
+			
+		}
+			
 
 		model.addAttribute("modules", modules);
 		return "validercredit/validercredit";
