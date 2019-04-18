@@ -7,12 +7,38 @@
     http://www.springframework.org/schema/security/spring-security.xsd">  
     
     <http auto-config="true">  
-        <intercept-url pattern="/*" access="hasRole('ROLE_ADMIN')" />  
+    
+       <intercept-url pattern="/directeur" access="ROLE_DIRECTEUR" />  
+        <intercept-url pattern="/directeur" access="ROLE_DIRECTEUR" />  
+        <intercept-url pattern="/ajoutercredit" access="ROLE_DIRECTEUR" />  
+        
+        
+        <intercept-url pattern="/professeur" access="ROLE_PROF" />  
+         <intercept-url pattern="/validercreditp" access="ROLE_PROF" />  
+          <intercept-url pattern="/consultercredit" access="ROLE_PROF" />  
+        
+     
+          <intercept-url pattern="/etudiant" access="ROLE_ETUDIANT" />  
+        <form-login 
+		
+		    default-target-url="/welcome" 
+			authentication-failure-url="/login?error" 
+			username-parameter="username"
+			password-parameter="password" />
+			
+			
+ 
     </http>  
+    
     <authentication-manager>  
       <authentication-provider>  
         <user-service>  
-        <user name="admin" password="1234" authorities="hasRole(ROLE_ADMIN)" />  
+        <user name="admin1" password="1234" authorities="ROLE_DIRECTEUR" />  
+            <user name="admin2" password="1234" authorities="ROLE_PROF" />  
+           <user name="admin3" password="1234" authorities="ROLE_ETUDIANT" />  
+        
+        
+        
         </user-service>  
       </authentication-provider>  
     </authentication-manager>  

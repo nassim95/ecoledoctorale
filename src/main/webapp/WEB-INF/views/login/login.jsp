@@ -51,9 +51,9 @@
           </div>
       
 									</div>
-									<form class="user" >
+								<form name='loginForm'   method='POST'>
 										<div class="form-group">
-											<input type="email" name="email"class="form-control form-control-user"
+											<input type="username" name="username" class="form-control form-control-user"
 												id="exampleInputEmail" aria-describedby="emailHelp"
 												placeholder="Enter Email Address...">
 										</div>
@@ -84,6 +84,9 @@
 											class="btn btn-facebook btn-user btn-block"> <i
 											class="fab fa-facebook-f fa-fw"></i> Login with Facebook
 										</a>
+										
+										<input name="submit" type="submit"
+					value="submit" />
 									</form>
 									<hr>
 									<div class="text-center">
